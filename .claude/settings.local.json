@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(python -m pytest tests/ -v)",
+      "Bash(hackanalyze --version)",
+      "Bash(hackanalyze --help)",
+      "Bash(python -c \":*)",
+      "Bash(streamlit run app.py)"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hackathon-chat"
+version = "0.1.0"
+description = "Chat agent interface for the Hackathon Analyzer"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.35",
+    "anthropic>=0.28",
+    "openai>=1.0",
+    "duckduckgo-search>=6.0",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["agent"]
